@@ -1,0 +1,12 @@
+{
+  "name": "total-rehab-video-convertor",
+  "version": "1.0.0",
+  "description": "Runs the `supabase-video-optimiser` script on a schedule.",
+  "private": true,
+  "author": "Alex Mendes",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "dependencies": {
+    "supabase-video-optimiser": "^1.0.7"
+  }
+}
