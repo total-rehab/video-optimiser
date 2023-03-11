@@ -663,6 +663,11 @@ any-observable@^0.3.0:
   resolved "https://registry.yarnpkg.com/any-observable/-/any-observable-0.3.0.tgz#af933475e5806a67d0d7df090dd5e8bef65d119b"
   integrity sha512-/FQM1EDkTsf63Ub2C6O7GuYFDsSXUwsaZDurV0np41ocwq0jthUAYCmhBX9f+KwlaCgIuWyr/4WlUQUBfKfZog==
 
+app-root-path@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/app-root-path/-/app-root-path-3.1.0.tgz#5971a2fc12ba170369a7a1ef018c71e6e47c2e86"
+  integrity sha512-biN3PwB2gUtjaYy/isrU3aNWI5w+fAfvHkSvCKeQGxhmYpwKFUxudR3Yya+KqVRHBmEDYh+/lTozYCFbmzX4nA==
+
 "aproba@^1.0.3 || ^2.0.0", aproba@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-2.0.0.tgz#52520b8ae5b569215b354efc0caa3fe1e45a8adc"
@@ -3693,13 +3698,14 @@ strip-json-comments@~2.0.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha512-4gB8na07fecVVkOI6Rs4e7T6NOTki5EmL7TUduTs6bu3EdnSycntVJ4re8kgZA+wx9IueI2Y11bfbgwtzuE0KQ==
 
-supabase-video-optimiser@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/supabase-video-optimiser/-/supabase-video-optimiser-1.0.7.tgz#5dbab54db21d2b66a23c8e6b5b3448164716d1fa"
-  integrity sha512-CGrVu7cM9oRcwNNbg5quCSYxbkdENRs3usFlOgwzyfmQf9hBkxDWCyIDuJpd2mcff6RBu33ipD9S4UI2+zEl9w==
+supabase-video-optimiser@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/supabase-video-optimiser/-/supabase-video-optimiser-1.0.8.tgz#d106bb7ca8b71becd8c649865c372730da9f4f3c"
+  integrity sha512-drJjVFnyvE1PeSpB6o44FlK1EQ74hAVKEtXklsUyRIQuWHdCBmWzT9UHqzqsRhhp2CrtmXdwaEmasp16weuudQ==
   dependencies:
     "@ffmpeg-installer/ffmpeg" "^1.1.0"
     "@supabase/supabase-js" "^2.7.1"
+    app-root-path "^3.1.0"
     dotenv "^16.0.3"
     fluent-ffmpeg "^2.1.2"
     fs-extra "^11.1.0"
