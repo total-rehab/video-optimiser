@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Install
+      - name: Run
         run: |
           npx supabase-video-optimiser \
           --url {{ env.SUPABASE_PROJECT_URL }} \
