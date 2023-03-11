@@ -1,0 +1,28 @@
+name: Run
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install
+        run: |
+          npx supabase-video-optimiser \
+          --url {{ env.SUPABASE_PROJECT_URL }} \
+          --key {{ env.SUPABASE_SERVICE_ROLE_KEY }} \
+          --bucket images \
+          --folder public \
+          --max 20 \
+        env:
+          SUPABASE_PROJECT_URL: ${{ secrets.SUPABASE_PROJECT_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
