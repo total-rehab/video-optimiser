@@ -18,8 +18,8 @@ jobs:
       - name: Run
         run: |
           npx supabase-video-optimiser \
-          --url {{ env.SUPABASE_PROJECT_URL }} \
-          --key {{ env.SUPABASE_SERVICE_ROLE_KEY }} \
+          --url $SUPABASE_PROJECT_URL \
+          --key $SUPABASE_SERVICE_ROLE_KEY \
           --bucket images \
           --folder public \
           --max 20 \
